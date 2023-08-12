@@ -1,0 +1,40 @@
+#scissor, paper and rock
+a=input("chose:s for scissor, p for paper or r for rock.\n").lower()
+if a=="s":
+    print("You chosed scissor")
+elif a=="p":
+    print("You chosed paper")
+elif a=="r":
+    print("You chosed rock")
+else:
+    print("wrong choice, you loose") 
+    exit()   #if wrong choice than the program will exits
+import random
+b=random.randint(0,2)#take 0 for scissor, 1 for paper and 2 for rock
+if b==0:
+    print("computer chosed scissor")
+elif b==1:
+    print("computer chosed paper")
+else :
+    print("computer chosed rock")
+#now using logic for declaring the winner
+if a=="s" and b==0:
+    print("The match is draw")
+elif a=="s" and b==1:
+    print("you won the match")
+elif a=="s" and b==2:
+    print("computer won")
+elif a=="p" and b==0:
+    print("you lose")
+elif a=="p" and b==1:
+    print("the match is draw")
+elif a=="p" and b==2:
+    print("you won")
+elif a=="r" and b==0:
+    print("you win")
+elif a=="r" and b==1:
+    print("you lose")
+elif a=="r" and b==2:
+    print("match is draw")
+else:
+    print("wrong choice")
